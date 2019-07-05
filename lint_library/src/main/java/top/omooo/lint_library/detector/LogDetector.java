@@ -22,13 +22,14 @@ import java.util.List;
 /**
  * Created by Omooo
  * Date:2019-07-04
+ * Desc:Avoid using Log class directly
  */
 @SuppressWarnings("UnstableApiUsage")
 public class LogDetector extends Detector implements Detector.UastScanner {
 
     public static final Issue ISSUE = Issue.create(
             "LogUsage",
-            "Don't use Log class",
+            "Log Usage",
             "Please use the unified LogUtil class!",
             Category.CORRECTNESS,
             6,
