@@ -22,14 +22,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * LogDetector
+     * Detector Test
      */
     private void testLogUsage() {
+        //Android 自带的 ToastDetector
+        Toast.makeText(this, "", Toast.LENGTH_SHORT);
+
         System.out.println("Omooo");
+
 //        Log.i(TAG, "啊啊啊啊，我被发现了！");
         Log.println(1, TAG, "嘿，我没事～");
         top.omooo.customlint.test.Log.i("我也没事～");
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
 
         new Thread(new Runnable() {
             @Override

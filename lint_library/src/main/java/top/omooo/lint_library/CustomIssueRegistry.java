@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import top.omooo.lint_library.detector.LogDetector;
+import top.omooo.lint_library.detector.PngDetector;
 import top.omooo.lint_library.detector.SampleCodeDetector;
 import top.omooo.lint_library.detector.ThreadDetector;
 
@@ -20,7 +21,11 @@ public class CustomIssueRegistry extends IssueRegistry {
     @NotNull
     @Override
     public List<Issue> getIssues() {
-        return Arrays.asList(LogDetector.ISSUE, SampleCodeDetector.ISSUE, ThreadDetector.ISSUE);
+        return Arrays.asList(
+                LogDetector.ISSUE,
+                SampleCodeDetector.ISSUE,
+                ThreadDetector.ISSUE,
+                PngDetector.ISSUE);
     }
 
     @Override
