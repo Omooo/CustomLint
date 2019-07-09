@@ -25,7 +25,8 @@ public class CustomIssueRegistry extends IssueRegistry {
                 LogDetector.ISSUE,
                 SampleCodeDetector.ISSUE,
                 ThreadDetector.ISSUE,
-                PngDetector.ISSUE);
+                PngDetector.ISSUE_PNG_IN_XML,
+                PngDetector.ISSUE_PNG_IN_CODE);
     }
 
     @Override
