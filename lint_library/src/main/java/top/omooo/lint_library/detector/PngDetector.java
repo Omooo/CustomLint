@@ -29,8 +29,7 @@ import org.w3c.dom.Attr;
 /**
  * Author: Omooo
  * Date: 2019/7/5
- * Version: 
- * Desc: 
+ * Desc: Avoid to use png in layout or java file
  */
 @SuppressWarnings("UnstableApiUsage")
 public class PngDetector extends Detector
